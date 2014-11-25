@@ -104,8 +104,7 @@ CONTAINER ID        IMAGE               COMMAND                CREATED          
 To access the Rstudio interface you first need to find the IP address that Docker is using. You can easily find this by typing ```boot2docker ip```. 
 
 Paste that IP address into your browser, along with a colon and the port the Docker image is listening too. It should look something like: 
-```
-192.168.59.103:8787```. 
+```192.168.59.103:8787``` . 
 
 If everything is working you should see a login page. ```rstudio``` is the default username and password. If you type ```library(MatrixEQTL)``` MatrixEQTL should be available to you.
 
