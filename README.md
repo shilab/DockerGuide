@@ -30,10 +30,7 @@ You should see something like:
 ```
 root@1bb30bf675b8:/#
 ```  
-You are now in an Ubuntu environment, and can use normal Linux commands. To get back to your terminal prompt just enter:  
-```
-exit
-```  
+You are now in an Ubuntu environment, and can use normal Linux commands. To get back to your terminal prompt just enter ```exit```.  
 ###Building from a Dockerfile  
 Docker images can be built from Dockerfiles. Open up your favorite text editor, create a file named Dockerfile containing the following:  
 
@@ -97,11 +94,7 @@ To run your new Docker image type:
 docker run -d -p 8787:8787 meqtl
 ```
 
-There should be one line of output which contains a mix of letters and numbers. This is the ID of the Docker process. If you type: 
-```
-docker ps
-```
-you should see something like:  
+There should be one line of output which contains a mix of letters and numbers. This is the ID of the Docker process. If you type ```docker ps``` you should see something like:  
 
 ```
 CONTAINER ID        IMAGE               COMMAND                CREATED             STATUS              PORTS                    NAMES
