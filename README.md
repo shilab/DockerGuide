@@ -119,3 +119,6 @@ If you want to share files between your computer and the Docker container you sh
 ```
 docker run -v ~/Downloads:/home/rstudio/data -d -p 8787:8787 meqtl
 ```  
+
+###Resources
+* [GUI Docker Container Manager for Mac](https://kitematic.com/)
