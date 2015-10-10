@@ -2,23 +2,9 @@ A Guide to Using Docker
 ===========
 
 ###Installation
-1. To install Docker for Mac go [here](https://github.com/boot2docker/osx-installer/releases/tag/v1.3.2), download boot2docker and run the installer.
-2. Open up a terminal window and run the following commands:  
+1. To install Docker for Mac go [here](https://www.docker.com/toolbox), download Docker Toolbox and run the installer.
 
-```
- $ boot2docker init
- $ boot2docker start  
- $ $(boot2docker shellinit)  
-```  
-You may see output like:
-
-```
-To connect the Docker client to the Docker daemon, please set:
-    export DOCKER_HOST=tcp://192.168.59.103:2376
-    export DOCKER_CERT_PATH=/Users/username/.boot2docker/certs/boot2docker-vm
-    export DOCKER_TLS_VERIFY=1
-```
-Just copy and paste the commands into your terminal and you're ready to use Docker. 
+2. You may need to run ```docker machine env dev``` and then ```eval "$(docker-machine env dev)"``` to finish the setup.
 
 ###Running a Docker Image
 To test your Docker install, lets run a Docker image.
@@ -119,6 +105,3 @@ If you want to share files between your computer and the Docker container you sh
 ```
 docker run -v ~/Downloads:/home/rstudio/data -d -p 8787:8787 meqtl
 ```  
-
-###Resources
-* [GUI Docker Container Manager for Mac](https://kitematic.com/)
